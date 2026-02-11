@@ -128,10 +128,21 @@
         }
 
         p {
-            font-size: 1.1rem;
+            font-family: 'Parisienne', cursive;
+            font-size: 3.5rem;
             margin-bottom: 1.5rem;
-            line-height: 1.7;
-            color: #ddd;
+            color: var(--secondary-color);
+            text-shadow: 0 0 15px rgba(227, 27, 109, 0.8);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
         }
 
         /* Buttons */
@@ -181,7 +192,7 @@
         }
 
         .photo-card:hover {
-            transform: scale(1.10) rotate(0deg);
+            transform: scale(1.05) rotate(0deg);
             z-index: 10;
         }
 
@@ -277,13 +288,14 @@
         <p>Every moment with you is a treasure.</p>
         <div class="gallery-grid">
             <!-- Replace these sources with your actual image URLs -->
-            <div class="photo-card"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400"
+            <div class="photo-card"><img src="https://i.ibb.co/wh5jTXb2/IMG20260102113533-4.jpg?
+w=400"
                     alt="Memory 1"></div>
-            <div class="photo-card"><img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=400"
+            <div class="photo-card"><img src="https://i.ibb.co/qLZ3wdMN/IMG20250203175603.jpg?w=400"
                     alt="Memory 2"></div>
-            <div class="photo-card"><img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=400"
+            <div class="photo-card"><img src="https://i.ibb.co/5XxVMhTh/1000157014.jpg?w=400"
                     alt="Memory 3"></div>
-            <div class="photo-card"><img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400"
+            <div class="photo-card"><img src="https://i.ibb.co/Y7t1zcZ3/IMG20251111195138.jpg?w=400"
                     alt="Memory 4"></div>
         </div>
         <button class="btn" onclick="nextScreen('screen-letter')">Next -></button>
@@ -311,15 +323,15 @@
 
     <!-- Screen 5: Celebration -->
     <div class="container" id="screen-celebration">
-        <h1>I Knew It! 💖</h1>
-        <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Celebration"
+        <h1>Yay!!!I Knew It!🫠💞</h1>
+        <img src="https://cliply.co/wp-content/uploads/2020/01/412001750_HAPPY_VALENTINES_400px.gif" alt="Celebration"
             style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
-        <p>I love you so much! Can't wait for our date! 🥰</p>
+        <p>I love you so much! Forever Yours 💝😚🫂</p>
     </div>
 
     <!-- Audio -->
     <audio id="bgMusic" loop>
-        <source src="jodiboli.mp3" type="audio/mp3">
+        <source src="https://jumpshare.com/s/YjVwUKN6wyXSIGElLYEU" type="audio/mp3">
     </audio>
     <div class="music-control" onclick="toggleMusic()">🎵</div>
 
@@ -329,7 +341,7 @@
         const YOUR_EMAIL = "demo@gmail.com";
 
         // ACTION: Customize your love letter here
-        const loveLetterText = "Dearest Love,\n\nFrom the moment I met you, my world has been brighter. Your smile is my favorite sight, and your laughter is my favorite sound.\n\nI cherish every moment we share, and I want to create a million more memories with you.\n\nSo, I have a very important question...";
+        const loveLetterText = "Dearest Love,\n\nFrom the moment you kissed me, my world has been brighter. Your smile is my favorite sight, and your laughter is my favorite sound.\n\nI cherish every moment we share, and I want to create a lifetime of memories with you.\n\nSo, I have a very important question...";
         /* --------------------- */
 
         // Particle System
@@ -412,8 +424,8 @@
         function dodgeButton() {
             const btn = document.getElementById('noBtn');
             const phrases = [
-                "No 😢", "Are you sure?", "Really?", "Think again!",
-                "Don't break my heart 💔", "Please? 🥺", "Last chance!",
+                "No 😢", "Are you sure?", "Really babe?", "Think again!",
+                "Don't break my heart 💔", "Puchu Please? 🥺", "Last chance!",
                 "You can't say no!", "I'll give you cookies 🍪", "But I love you! ❤️"
             ];
 
@@ -490,6 +502,4 @@
     </script>
 </body>
 
-
 </html>
-
